@@ -1,2 +1,2 @@
 # homepage
-Spring 2024 - Hand-made Web
+Spring 2024 - Handmade Web
