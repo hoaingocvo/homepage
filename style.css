@@ -1,5 +1,5 @@
 html {
-    background-color:rgb(232, 163, 200);
+    background-color:rgb(231, 158, 197);
     }
     
     p {
@@ -9,6 +9,6 @@ html {
     
     h1 {
         color:deeppink;
-        border: 10px solid white;
+        background-color: white;
         text-decoration:underline;
     }
