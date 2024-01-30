@@ -1,0 +1,15 @@
+html {
+    background-color:rgb(231, 158, 197);
+    }
+    
+    p {
+    color:white;
+    border-width: 150px white;
+    font-size:25px;
+    }
+    
+    h1 {
+        color:deeppink;
+        background-color: white;
+        text-decoration:underline;
+    }
