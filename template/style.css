@@ -1,0 +1,11 @@
+html {
+    background-color:rgb(231, 158, 197);
+    }
+    
+* {
+    box-sizing: border-box;
+}
+
+    img {
+        max-width: 100%;
+    }

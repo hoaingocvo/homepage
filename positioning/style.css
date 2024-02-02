@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+   background-color:rgb(231, 158, 197);
+}
+
+p {
+   background-color: rgb(133, 15, 30); 
+   padding:10px;
+   font-size: 30px;
+}
+
+p {
+    background-color: white;
+}
+
+.more-specific {
+    background-color: rgb(134, 153, 102);
+    padding: 20px;
+}
+
+#even-more-specific {
+    background-color: honeydew;
+}
+
+div {
+    margin:0px;
+}
+
+.square {
+    background-color: honeydew;
+    width:100px;
+    height:100px;
+    border:1px solid black;
+    margin:20px 0 20px 50px;
+
+    top:20px;
+    left:20px;   
+}
+
+.relative {
+    background-color: teal;
+    position: relative;
+    top:40px;
+    left:40px;
+}
+
+.fixed {
+    background-color: burlywood;
+    position:fixed;
+    bottom:0;
+    left:0;
+    margin:0;
+}
+
+.container {
+    background-color: aqua;
+    position:relative;
+    width:400px;
+    height:400px;
+    border:1px solid black;
+    margin:0;
+    padding:0;
+}
+
+div.absolute {
+    background-color: darkgoldenrod;
+    position: absolute;
+    border:1px solid black;
+    left:299px;
+    right:-154px;
+    top:0;
+    margin:0;
+}
+
