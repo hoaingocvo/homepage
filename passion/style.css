@@ -12,3 +12,15 @@ html {
         background-color: white;
         text-decoration:underline;
     }
+
+    ul {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    ol {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    h2 {
+        color: white;
+    }
