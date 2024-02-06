@@ -1,0 +1,71 @@
+html {
+    background-color:rgb(74, 105, 66);
+    }
+    
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.ship {
+    color:rgb(214, 214, 214);
+}
+
+h1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:white;
+    border: dashed;
+    padding-left: 500px;
+}
+
+.intro {
+    font-size: 16px;
+    color: white;
+}
+
+p {
+    font-size: 16px;
+    color: white;
+}
+.seasonal {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(255, 240, 251);
+    width:100px;
+    height:100px;
+    border:10px solid black;
+    margin:20px 0 20px 50px;
+    text-align: center;
+    top:20px;
+    left:20px; 
+}
+
+.relative1 {
+    background-color: rgb(247, 194, 240);
+}
+
+.relative2 {
+    background-color: rgb(251, 173, 240);
+}
+
+.relative3 {
+    background-color: rgb(206, 140, 197);
+}
+
+.grid-container {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: grid;
+    grid: 150px / auto auto auto;
+    background-color: #5c3611;
+    padding: 10px;
+
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+  }
