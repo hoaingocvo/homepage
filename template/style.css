@@ -5,6 +5,11 @@
 body {
     margin: 0px;
     padding: 0px;
+    background-repeat: no-repeat;
+    background-image: url();
+    background-size: 1500px 1000px;
+    background-attachment:fixed;
+    position:absolute;
 }
 
 img {
