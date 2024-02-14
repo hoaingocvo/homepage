@@ -2,31 +2,54 @@
     box-sizing: border-box;
 }
 
-h1 {
-        font-family: "The Nautigal", cursive;
-        font-weight: 400;
-        font-style: normal;
-}
-
 body {
     background-repeat: no-repeat;
-    background-size: 1500px 1000px;
-    margin:0px;
-    padding:0px;
-    background-image: url(lotus-pond.jpg), linear-gradient(to top, rgb(13, 48, 80), rgb(255, 110, 161));
+    background-size: cover; /* Ensure the background covers the entire viewport */
+    margin: 0;
+    padding: 0;
+    background-image: url(lotus-pond.jpg);
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
+.title {
+    padding: 0;
+    margin: 0;
+    height: auto; /* Adjust as needed */
+    align-content: center;
+    flex-direction: row;
+    text-wrap: nowrap;
+    justify-content: center;
+}
+
+h1 {
+    font-family: "The Nautigal", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    flex-direction: row;
+    text-wrap: nowrap;
+    justify-content: center;
+    padding-left:50px;
+    padding-top: 20px;
+}
+ 
 .container {
+    height: relative;
     width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to top, rgb(2, 29, 54), rgb(255, 110, 161));
-    opacity:0.45;
+    background-size: cover; /* Ensure the background covers the entire container */
+    background-image: linear-gradient(to right, rgb(27, 76, 122), rgb(255, 110, 161));
+    position: sticky;
+    opacity: 0.55;
+} 
+
+.container> * {
+    opacity: 1; /* Override opacity for direct children */
 }
 
 .section1 {
     background-color: black;
     height: 50px;
-    opacity: 100%;
 } 
 
 .section2 {
@@ -35,26 +58,132 @@ body {
     opacity: 100%;
 } 
 .section3 {
-    background-color: rgb(243, 255, 78);
     height: 150px;
     opacity: 100%;
+    align-items: center;
+    display: flex; 
+    flex-direction: row;
+    text-wrap: nowrap;
+    justify-content: center;
+    gap:10px;
+    padding-top: 0px;
+    padding-bottom: 10px;
 } 
 
-.section4 {
-    background-color: purple;
-    height: 150px;
+.s3-box1 {
+    height:150px;
+    background-color: rgb(108, 255, 221);
+    border: 5px solid white;
+    justify-content: center;
+    display: flex; 
+    flex-direction: row;
+    width: 100px;
+    align-content: center;
+    align-items: center;
+}
+
+.s3-box2 {
+    background-image: linear-gradient(to right, rgb(169, 169, 169), rgb(123, 8, 81));
+border: 5px solid white;
+justify-content: center;
+display: flex; 
+flex-direction: row;
+height:50px;
+width: 100px;
+align-content: center;
+align-items: stretch;
+}
+
+.s4mainbox {
+    background-color: hotpink;
     opacity: 100%;
+    width:1200px;
+    align-items: center;
+    display: flex; 
+    flex-direction: row;
+    text-wrap: nowrap;
+    justify-content: center;
+    padding-bottom:20px;
+    padding-top:20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    gap:20px 70px;
+}
+.section4 {
+    opacity: 100%;
+    align-items: center;
+    display: flex; 
+    flex-direction: row;
+    text-wrap: nowrap;
+    justify-content: center;
+    padding-bottom:20px;
+    padding-top:20px;
+    gap:20px 70px;
 } 
+
+.s4-box1 {
+    padding-top: 0px;
+    margin: 0px;
+    background-image: linear-gradient(to right, rgb(161, 26, 26), rgb(255, 85, 47));
+    background-position: relative;
+    border: 5px solid white;
+    justify-content: center;
+    display: flex; 
+    flex-direction: row;
+    height:100px;
+    width: 200px;
+    align-content: center;
+    align-items: center;
+}
 
 .section5 {
-    background-color: rgb(255, 255, 255);
     height: 50px;
     opacity: 100%;
-    align-items: stretch;
+    align-items: center;
+    display: flex; 
+    flex-direction: row;
+    text-wrap: nowrap;
+    justify-content: center; 
 } 
 
+.s5-box1 {
+    background-image: linear-gradient(to top, rgb(255, 178, 36), #b35139);
+    border: 5px solid white;
+    justify-content: center;
+    display: flex; 
+    flex-direction: row;
+    height:100%;
+    width: 1100px;
+    align-content: center;
+    align-items: center;
+}
+
+.s5-box2 {
+    background-image: linear-gradient(to top, rgb(161, 26, 26), rgb(163, 128, 120));
+    border: 2px dashed white;
+    justify-content: center;
+    height:80%;
+    width: 90%;
+    align-content: center;
+    align-items: center;
+    display: flex; 
+    flex-direction: row;
+}
+
+.s5-box3 {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(253, 180, 163));
+    border: 2px solid white;
+    justify-content: center;
+    height:50%;
+    width: 80%;
+    align-content: center;
+    align-items: center;
+    display: flex; 
+    flex-direction: row;
+}
+
+
 .section6 {
-    background-color: rgb(98, 46, 46);
     height: 350px;
     opacity: 100%;
     padding: 10px;
@@ -67,42 +196,11 @@ body {
 } 
 
 .columnbase {
-    background-color: aqua;
+    background-color: rgb(158, 11, 11);
+    background-image: url(monet2.jpeg);
     border: 5px solid white;
     justify-content: center;
     padding: 30px;
     align-content: center;
     align-items: center;
-    
-
-}
-/* .container {
-    background: url(lotus-pond.jpg);
-    margin: 0px;
-    width: 1500px;
-    height: 1000px;
-    padding: 0px;
-    background-attachment: fixed;
-    background-size: contain;
-    position: relative;
-    display:flex;
-} */
-
-/* .gradient {
-    height: 100%;
-    width: 100%;
-    background-image: 
-    linear-gradient(to top, rgb(13, 48, 80), rgb(255, 110, 161));
-    background-color: aqua;
-    position: absolute;
-    opacity: 0.25;  
-    top:0;
-    left;0;
-} */
-
-img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    display: block;
 }
