@@ -12,6 +12,16 @@ body {
     min-height: 100vh;
 }
 
+.p {
+    color: white;
+    padding: 0;
+    margin: 0;
+    height: auto; /* Adjust as needed */
+    align-content: center;
+    flex-direction: row;
+    text-wrap: nowrap;
+    justify-content: center;
+}
 .title {
     padding: 0;
     margin: 0;
@@ -53,6 +63,7 @@ h1 {
 } 
 
 .section2 {
+    background-color: #b35139;
     padding-top:40px;
     box-sizing: border-box;
     flex-direction: column;
@@ -65,7 +76,8 @@ h1 {
 
 .s2-1 {
     background-image: linear-gradient(to top, rgb(255, 178, 36), #b35139);
-    background-image: url(st.png);
+    background-image: url(72.webp);
+    background-size: 100%;
     border: 5px solid white;
     border-top-left-radius:100%;
     border-top-right-radius: 100%;
@@ -76,12 +88,52 @@ h1 {
     height: 250px;
     width: 750px;
     box-sizing: border-box;
-    flex-direction: column;
-    align-content:center;
-    align-items:center;
+    flex-direction: row;
+    align-items:flex-end;
+    justify-content:center;
+    padding-left: 45px;
+    padding-bottom: 0px;
+    align-items: stretch;
+    padding-bottom: 0px;
+}
+
+.s2-2 {
+    background-image: linear-gradient(to top, rgb(209, 107, 19), #98255d);
+    opacity: 40%;
+    background-size: 100%;
+    border: 4px dashed white;
+    border-top-left-radius:150%;
+    border-top-right-radius: 150%;
+    border-bottom: 0px;
+    justify-content: center;
+    height: 200px;
+    width: 650px;
+    padding-left: 65px;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-content:flex-end;
+    align-items:flex-end;
     justify-content:center;
 }
 
+.s2-3 {
+    background-image: linear-gradient(to bottom, rgb(174, 1, 41), #fcd773);
+    opacity: 100%;
+    background-size: 100%;
+    border: 2px solid white;
+    border-top-left-radius:150%;
+    border-top-right-radius: 150%;
+    border-bottom: 0px;
+    justify-content: center;
+    height: 200px;
+    width: 500px;
+    padding-left: 400px;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-content:flex-end;
+    align-items:flex-end;
+    justify-content:center;
+}
 /* ------------------------- */
 .section3 {
     height: 150px;
@@ -492,7 +544,7 @@ h1 {
     flex-direction: row;
     text-wrap: nowrap;
     justify-content: center;
-    column-gap: 50px;
+    column-gap: 70px;
 } 
 
 .columnbase {
@@ -501,15 +553,51 @@ h1 {
     background-image: url(monet.jpg);
     border: 5px solid white;
     justify-content: center;
-    padding: 30px;
+    padding: 0px;
     align-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
+.rectop {
+    border: 3px dashed rgb(250, 205, 213);
+    background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(114, 143, 152));
+    display: flex;
+    height:50px;
+    width:100%;
+    padding:0px;
+    margin:0px;
+}
+
+.rectop1 {
+    border: 5px solid rgb(181, 219, 215);
+    background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(114, 143, 152));
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height:90%;
+    width:100%;
+}
+
+.rectop2 {
+    border: 2px solid rgb(244, 201, 155);
+    border-radius: 5px;
+    background-image: linear-gradient(to top, rgb(86, 255, 249), rgb(130, 178, 255));
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height:50%;
+    width:60%;
+}
+
 .square {
     background-color: rgb(201, 99, 143);
+    border: 3px dotted white;
     width:20px;
     height:80px;
     gap:10px;
