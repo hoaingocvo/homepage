@@ -53,17 +53,43 @@ h1 {
 } 
 
 .section2 {
-    background-color: rgb(168, 0, 0);
+    padding-top:40px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-content:center;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    gap:0px;
+}
+
+.s2-1 {
+    background-image: linear-gradient(to top, rgb(255, 178, 36), #b35139);
+    background-image: url(st.png);
+    border: 5px solid white;
+    border-top-left-radius:100%;
+    border-top-right-radius: 100%;
+    border-bottom: 0px;
+    justify-content: center;
+    height: 80%;
+    width: 80%;
     height: 250px;
-    opacity: 100%;
-} 
+    width: 750px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-content:center;
+    align-items:center;
+    justify-content:center;
+}
+
+/* ------------------------- */
 .section3 {
     height: 150px;
     opacity: 100%;
     align-items: center;
     display: flex; 
     flex-direction: row;
-    text-wrap: nowrap;
+    text-wrap: wrap;
     justify-content: center;
     gap:10px;
     padding-top: 0px;
@@ -72,7 +98,7 @@ h1 {
 
 .s3-box1 {
     height:150px;
-    background-color: rgb(108, 255, 221);
+    background-image: url(column.jpeg);
     border: 5px solid white;
     justify-content: center;
     display: flex; 
@@ -82,20 +108,113 @@ h1 {
     align-items: center;
 }
 
+.s3-box3 {
+    background-image: linear-gradient(to top, rgb(169, 169, 169), rgb(123, 8, 81));
+    border: 4px solid white;
+    border-radius: 10%;
+    justify-content: center;
+    display: flex; 
+    flex-direction: column;
+    width: 80%;
+    height:100%;
+    align-content: center;
+    align-items: center;
+}
+
+.s3-box4 {
+    height:150px;
+    background-image: url(monet2.jpeg);
+    border: 4px dashed white;
+    justify-content: center;
+    display: flex; 
+    flex-direction: row;
+    width: 80%;
+    height:90%;
+    align-content: center;
+    align-items: center;
+}
+.s3-box5 {
+    height:150px;
+    background-image: linear-gradient(to top, rgb(169, 169, 169), rgb(159, 169, 255));
+    border: 3px solid white;
+    justify-content: center;
+    display: flex; 
+    flex-direction: row;
+    width: 80%;
+    height:80%;
+    align-content: center;
+    align-items: center;
+}
+
+.s3-box6 {
+    height:150px;
+    background-image: url(monet2.jpeg);
+    border: 3px dashed white;
+    justify-content: center;
+    display: flex; 
+    flex-direction: row;
+    width: 80%;
+    height:70%;
+    align-content: center;
+    align-items: center;
+}
+
+.s3-box7 {
+    height:150px;
+    background-color: aquamarine;
+    border-radius: 100%;
+    border: 2px solid white;
+    justify-content: center;
+    display: flex; 
+    flex-direction: row;
+    width: 80%;
+    height:30%;
+    align-content: center;
+    align-items: center;
+}
+
 .s3-box2 {
     background-image: linear-gradient(to right, rgb(169, 169, 169), rgb(123, 8, 81));
-border: 5px solid white;
-justify-content: center;
-display: flex; 
-flex-direction: row;
-height:50px;
-width: 100px;
-align-content: center;
-align-items: stretch;
+    border: 5px solid white;
+    justify-content: center;
+    display: flex; 
+    flex-direction: row;
+    height:50px;
+    width: 50px;
+    align-content: center;
+    align-items: stretch;
+}
+
+.s4-box1-5 {
+    height:150px;
+    background-image: linear-gradient(to right, rgb(169, 169, 169), rgb(123, 8, 81));
+    border: 1px solid white;
+    justify-content: center;
+    display: flex; 
+    flex-direction: row;
+    width: 50%;
+    height: 95%;
+    align-content: center;
+    align-items: center;
 }
 
 .s4mainbox {
-    background-color: hotpink;
+    background-color: rgb(255, 157, 206);
+    border: 15px dotted rgb(141, 48, 121);
+    opacity: 100%;
+    width:1200px;
+    height:200px;
+    align-items: center;
+    display: flex; 
+    flex-direction: row;
+    text-wrap: nowrap;
+    justify-content: center;
+    padding:10px;
+}
+
+.s4mainbox1 {
+    background-image: linear-gradient(to right, rgb(161, 26, 26), rgb(255, 85, 47));
+    border: 5px dotted rgb(255, 255, 255);
     opacity: 100%;
     width:1200px;
     align-items: center;
@@ -103,12 +222,130 @@ align-items: stretch;
     flex-direction: row;
     text-wrap: nowrap;
     justify-content: center;
-    padding-bottom:20px;
-    padding-top:20px;
-    padding-left: 70px;
-    padding-right: 70px;
-    gap:20px 70px;
+    height:95%;
+    width:99%;
 }
+
+.s4mainbox2 {
+    background-image: linear-gradient(to right, rgb(161, 26, 26), rgb(213, 154, 208));
+    border: 5px solid rgb(197, 166, 190);
+    opacity: 100%;
+    align-items: center;
+    display: flex; 
+    flex-direction: row;
+    text-wrap: nowrap;
+    justify-content: center;
+    height:90%;
+    width:100%;
+}
+
+
+.s4mainbox4 {
+    background-image: linear-gradient(to right, rgb(161, 26, 26), rgb(255, 85, 47));
+    border: 3px solid rgb(15, 207, 255);
+    align-items: center;
+    display: flex; 
+    flex-direction: row;
+    text-wrap: nowrap;
+    justify-content: center;
+    height:85%;
+    width:90%;
+}
+
+.s4mainbox3 {
+    background-image: linear-gradient(to right, rgb(161, 26, 26), rgb(255, 85, 47));
+    border: 3px dashed rgb(255, 255, 255);
+    opacity: 100%;
+    align-items: center;
+    display: flex; 
+    flex-direction: row;
+    text-wrap: nowrap;
+    justify-content: center;
+    height:70%;
+    width:90%;
+}
+
+.s4mainbox6 {
+    background-image: url(st1.jpeg);
+    border: 5px dotted rgb(255, 194, 80);
+    align-items: center;
+    display: flex; 
+    flex-direction: row;
+    text-wrap: nowrap;
+    justify-content: center;
+    height:70%;
+    width:100%;
+    gap:20px 50px;
+}
+
+
+.s4mainbox6 {
+    background-image: url(st1.jpeg);
+    border: 5px dotted rgb(141, 48, 121);
+    opacity: 100%;
+    align-items: center;
+    display: flex; 
+    flex-direction: row;
+    text-wrap: nowrap;
+    justify-content: center;
+    height:95%;
+    width:100%;
+    gap:20px 50px;
+}
+
+.s4-box1-1 {
+    height:150px;
+    background-color: rgb(201, 99, 143);
+    border: 5px solid white;
+    justify-content: center;
+    display: flex; 
+    flex-direction: row;
+    width: 40px;
+    height: 120px;
+    align-content: center;
+    align-items: center;
+}
+
+.s4-box1-2 {
+    height:150px;
+    background-color: rgb(201, 99, 143);
+    border: 2px dashed white;
+    justify-content: center;
+    display: flex; 
+    flex-direction: row;
+    width: 70%;
+    height: 95%;
+    align-content: center;
+    align-items: center;
+}
+
+.s4-box1-3 {
+    height:150px;
+    background-color: rgb(190, 116, 148);
+    border: 1px dashed white;
+    justify-content: center;
+    display: flex; 
+    flex-direction: row;
+    width: 65%;
+    height: 95%;
+    align-content: center;
+    align-items: center;
+}
+
+.s4-box1-4 {
+    height:150px;
+    background-color: rgb(201, 99, 143);
+    border: 1px solid white;
+    justify-content: center;
+    display: flex; 
+    flex-direction: row;
+    width: 65%;
+    height: 95%;
+    align-content: center;
+    align-items: center;
+}
+
+
 .section4 {
     opacity: 100%;
     align-items: center;
@@ -136,6 +373,70 @@ align-items: stretch;
     align-items: center;
 }
 
+
+.s4-box2 {
+    background-image: linear-gradient(to top, rgb(0, 205, 208), rgb(163, 128, 120));
+    border: 2px dashed white;
+    justify-content: center;
+    height:80%;
+    width: 90%;
+    align-content: center;
+    align-items: center;
+    display: flex; 
+    flex-direction: row;
+}
+
+.s4-box3 {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 77, 175));
+    border: 2px solid white;
+    justify-content: center;
+    height:80%;
+    width: 90%;
+    align-content: center;
+    align-items: center;
+    display: flex; 
+    flex-direction: row;
+}
+
+.s4-box4 {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(55, 145, 106));
+    border: 1px solid white;
+    justify-content: center;
+    height:80%;
+    width: 90%;
+    align-content: center;
+    align-items: center;
+    display: flex; 
+    flex-direction: row;
+}
+
+.s4-box5 {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(114, 55, 145));
+    border: 1px dashed white;
+    justify-content: center;
+    height:80%;
+    width: 90%;
+    align-content: center;
+    align-items: center;
+    display: flex; 
+    flex-direction: row;
+}
+
+.s4-box6 {
+    background-image: linear-gradient(to right, rgb(119, 16, 32), rgb(210, 195, 177));
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border: 1px dashed white;
+    justify-content: center;
+    height:50%;
+    width: 50%;
+    align-content: center;
+    align-items: center;
+    display: flex; 
+    flex-direction: row;
+}
+
+/* ------------------------------------ */
 .section5 {
     height: 50px;
     opacity: 100%;
@@ -185,22 +486,54 @@ align-items: stretch;
 
 .section6 {
     height: 350px;
-    opacity: 100%;
     padding: 10px;
     align-items: stretch;
     display: flex; 
     flex-direction: row;
     text-wrap: nowrap;
     justify-content: center;
-    column-gap: 40px;
+    column-gap: 50px;
 } 
 
 .columnbase {
+    width:80px;
     background-color: rgb(158, 11, 11);
-    background-image: url(monet2.jpeg);
+    background-image: url(monet.jpg);
     border: 5px solid white;
     justify-content: center;
     padding: 30px;
     align-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
+
+.square {
+    background-color: rgb(201, 99, 143);
+    width:20px;
+    height:80px;
+    gap:10px;
+}
+
+.rec {
+    background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(110, 253, 224));
+    display: flex;
+    height:50px;
+    width:50px;
+}
+
+.inside1 {
+
+}
+
+.inside2 {
+
+}
+
+.inside3 {
+
+}
+.inside4 {
+
+}
+

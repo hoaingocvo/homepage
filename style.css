@@ -10,6 +10,7 @@ body {
     background-size: 1500px 1000px;
     background-attachment: fixed;
     position:absolute;
+    padding-bottom: 120px;
     }
 
 img {
