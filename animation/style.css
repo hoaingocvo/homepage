@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(17, 84, 84);
+}
+
+img {
+    max-width: 100%;
+}
+
+.square {
+    background-color: bisque;
+    width:200px;
+    height:200px;
+    
+    /* animation-name: life;
+    animation-duration: 10s;
+    animation-delay: 2s; */
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
+    /* animation-fill-mode: both; */
+
+    animation: life 10s 2s infinite alternate both;
+}
+
+@keyframes life {
+    0% {
+    background-color: rgb(83, 80, 76); 
+}
+
+    26% {
+    background-color: brown;
+    }
+
+    70% {
+    background-color: darkorchid;
+    }
+
+    100% {
+    background-color: darkgreen;
+    }
+}
+
+.container {
+    background-color:gray;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+.circle {
+    background-color: khaki;
+    width:20vw;
+    height:20vw;
+    border-radius: 100%;
+    animation: pulse 1.3s infinite alternate ease-in-out; 
+}
+
+@keyframes pulse {
+    0% {
+        background-color:khakhi;
+        transform: scale(1);
+    }
+
+
+    100% {
+        background-color:darkblue;
+       transform:scale(1.5);
+    }
+}
+
+.box {
+    background-color: khaki;
+    width:20vw;
+    height:20vw;
+    animation: spin 5s infinite alternate linear;
+}
+
+@keyframes spin {
+    0% {
+        transform:rotate(0);
+    }
+
+    100% {
+        transform:rotate(360deg);
+    }
+}
