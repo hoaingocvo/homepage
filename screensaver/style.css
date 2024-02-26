@@ -1,0 +1,530 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    display:flex;
+    flex-wrap: wrap;
+    margin:0;
+    background-image: url(casi.jpeg);
+    background-repeat: no-repeat;
+    background-size: 1500px 1000px;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    bottom:0px;
+    padding:0px;
+    position: fixed;
+}
+
+.cardstack1 {
+    display: block;
+    background-position: center;
+    padding:0;
+    margin:0;
+    background-color: black;
+    border-radius: 6%;
+    background-repeat: no-repeat;
+    height: 315px;
+    width: 227px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.cardstack2 {
+    display: flex;
+    background-position: center;
+    margin:0;
+    padding:0;
+    background-color: black;
+    border-radius: 6%;
+    background-repeat: no-repeat;
+    height: 315px;
+    width: 226px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.back {
+    background-position: center;
+    position: absolute;
+   
+}
+
+img {
+    max-width: 100%;
+    max-height:100%;
+    object-fit: cover;
+    border-radius: 6%;
+    margin: 0px;
+    padding: 0px;
+    top:0;
+}
+
+.namh {
+    animation-name: namh;
+    animation-duration: 26s;
+    animation-delay: 0s;   
+    position: absolute;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes namh {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    15% {
+        transform: translateX(0) translateY(+200px);
+    }
+
+    65% {
+        transform: translateX(+1000px) translateY(+200px);
+    }
+
+    100% {
+        transform: translateX(-300px) translateY(-900px);
+    }
+}
+
+.haic {
+    animation-name: haic;
+    animation-duration: 6s;
+    animation-delay: 0s;   
+    position: absolute;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes haic {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(+500px);
+    }
+
+    100% {
+        transform: translateX(+1000px);
+
+    }
+}
+
+
+.AD {
+    animation-name: AD;
+    animation-duration: 7s;
+    animation-delay: 0s;   
+    position: absolute;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes AD {
+    0% {
+        transform: translateX(-800px);
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateX(-200px);
+        transform: translateY(+100);
+    }
+
+    100% {
+        transform: translateX(+300px);
+        transform: translateY(+500);
+    }
+}
+
+.bays {
+    animation-name: bays;
+    animation-duration: 5s;
+    animation-delay: 0s;   
+    position: absolute;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes bays {
+    0% {
+        transform: translatex(0px) translatey(0px)
+    }
+    100% {
+        transform: translatex(200px) translatey(200px);
+    }
+}
+
+.AH {
+    animation-name: AH;
+    animation-duration: 16s;
+    animation-delay: 0s;   
+    position: absolute;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes AH {
+    0% {
+        transform: translatex(0) translatey(0);
+    }
+    50% {
+        transform: translatex(-600px) translatey(-300px);
+    }
+
+    80% {
+        transform: translatex(+1000px) translatey(-300px);
+    }
+
+    100% {
+        transform: translatex(500px) translatey(-100px);
+    }
+}
+
+.bas {
+    animation-name: bas;
+    animation-duration: 6s;
+    animation-delay: 0s;   
+    position: absolute;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes bas {
+    0% {
+        transform: translatex(0px) translatey(0px);
+    }
+
+    55% {
+        transform: translatex(-200px) translatey(-200px);
+    }
+
+    100% {
+        transform: translatex(+200px) translatey(+200px);
+    }
+}
+
+.JD {
+    animation-name: JD;
+    animation-duration: 15s;
+    animation-delay: 0s;   
+    position: absolute;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes JD {
+    0% {
+        transform: translatex(-800px) translatey(-500px);
+    }
+
+    50% {
+        transform: translatex(+500px) translatey(+200px);
+    }
+
+    100% {
+        transform: translatex(-500px) translatey(+200px);
+    }
+}
+
+.KS {
+    animation-name: KS;
+    animation-duration: 15s;
+    animation-delay: 0s;   
+    position: absolute;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes KS {
+    0% {
+        transform: translatex(-200px) translatey(-500px);
+        opacity: 100%;
+    }
+
+    50% {
+        transform: translatex(+300px) translatey(+200px);
+        opacity: 66%;
+
+    }
+
+    100% {
+        transform: translatex(-400px) translatey(-800px);
+        opacity: 100%;
+    }
+}
+
+.muoid {
+    animation-name: muoid;
+    animation-duration: 10s;
+    animation-delay: 0s;   
+    position: absolute;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes muoid {
+    0% {
+        transform: translatex(0) translatey(0);
+    }
+
+    50% {
+        transform: translatex(-500px) translatey(0);
+    }
+
+    100% {
+        transform: translatex(-800px) translatey(+100px);
+    }
+}
+
+.QC {
+    animation-name: QC;
+    animation-duration: 12s;
+    animation-delay: 0s;   
+    position: absolute;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes QC {
+    0% {
+        transform: translatex(-900px) translatey(0);
+    }
+
+    50% {
+        transform: translatex(-500px) translatey(-100px);
+    }
+
+    100% {
+        transform: translatex(-100px) translatey(+500px);
+    }
+}
+
+.namc {
+    animation-name: namc;
+    animation-duration: 15s;
+    animation-delay: 0s;   
+    position: absolute;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes namc {
+    0% {
+        transform: translatex(-770px) translatey(0);
+        opacity: 100%;
+    }
+
+    50% {
+        transform: translatex(-120px) translatey(-180px);
+        opacity: 50%;
+    }
+
+    100% {
+        transform: translatex(-910px) translatey(+351px);
+        opacity: 100%;
+    }
+}
+
+.bons {
+    animation-name: bons;
+    animation-duration: 15s;
+    animation-delay: 0s;   
+    position: absolute;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes bons {
+    0% {
+        transform: translateX(+800px);
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateX(+200px);
+        transform: translateY(+150);
+    }
+
+    100% {
+        transform: translateX(+441px);
+        transform: translateY(+590);
+    }
+}
+
+.saud {
+    animation-name: saud;
+    animation-duration: 9s;
+    animation-delay: 0s;   
+    position: absolute;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes saud {
+    0% {
+        transform: translateX(0);
+        transform: translateY(+595px);
+    }
+
+    100% {
+        transform: translateX(0);
+        transform: translateY(0);
+    }
+}
+
+.haih {
+    animation-name: haih;
+    animation-duration: 12s;
+    animation-delay: 0s;   
+    position: absolute;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes haih {
+    0% {
+        transform: translateX(-80px);
+        transform: translateY(0);
+        opacity: 25%;
+    }
+
+    50% {
+        transform: translateX(+291px);
+        transform: translateY(+320px);
+        opacity: 85%;
+    }
+
+    100% {
+        transform: translateX(0);
+        transform: translateY(+590px);
+        opacity: 100%;
+
+    }
+}
+
+.tamd {
+    animation-name: tamd;
+    animation-duration: 14s;
+    animation-delay: 0s;   
+    position: absolute;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes tamd {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    15% {
+        transform: translateX(0) translateY(-200px);
+    }
+
+    65% {
+        transform: translateX(+980px) translateY(+200px);
+    }
+
+    100% {
+        transform: translateX(0) translateY(+300px);
+    }
+}
+
+.chinc {
+    animation-name: chinc;
+    animation-duration: 16s;
+    animation-delay: 0s;   
+    position: absolute;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes chinc {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    15% {
+        transform: translateX(0) translateY(-200px);
+    }
+
+    65% {
+        transform: translateX(+380px) translateY(-272px);
+    }
+
+    100% {
+        transform: translateX(0) translateY(+300px);
+    }
+}
+
+.KH {
+    animation-name: KH;
+    animation-duration: 12s;
+    animation-delay: 0s;   
+    position: absolute;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes KH {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    15% {
+        transform: translateX(0) translateY(-200px);
+    }
+
+    65% {
+        transform: translateX(+180px) translateY(-472px);
+    }
+
+    100% {
+        transform: translateX(0) translateY(+900px);
+    }
+}

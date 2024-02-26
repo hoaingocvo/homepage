@@ -51,6 +51,7 @@ ul {
     padding:30px;
     margin:0px;
     font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 60px;
 }
 
 .grid-container {
@@ -61,22 +62,46 @@ ul {
     height: auto;
     grid: 100px / auto auto;
     background-image: linear-gradient(to top, rgb(255, 111, 0), rgb(255, 110, 161));
-    padding: 30px;
-    gap: 30px;
+    padding: 45px;
+    gap: 45px;
     align-items: center;
     align-content: center;
+    animation: box 11s alternate 2s infinite;
 }
   
 .item {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    padding: 30px;
-    padding-bottom: 40px;
-    font-size: 25px;
+    padding: 55px;
+    padding-bottom: 55px;
+    font-size: 26px;
     align-items: center;
     align-content: center;
     font-family: "League Gothic", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    justify-content: space-evenly;
+}
+
+@keyframes box {
+    0% {
+        opacity: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    55% {
+        opacity: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    70% {
+        opacity: 20%;
+        background-color: rgba(43, 13, 13, 0.8);
+    }
+
+    100% {
+        opacity: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
 }
