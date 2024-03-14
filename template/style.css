@@ -1,19 +1,12 @@
 * {
     box-sizing: border-box;
-    padding: 0px;
+    padding: 15px;
     margin: 0px;
+    background-attachment: fixed;
 }
 
-body {
-    margin: 0px;
-    padding: 0px;
-    background-repeat: no-repeat;
-    background-image: url();
-    background-size: 1500px 1000px;
-    background-attachment:fixed;
-    position:absolute;
-}
 
 img {
     max-width: 100%;
+    position:fixed;
 }

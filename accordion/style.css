@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-top: 25px;
+    margin: 0px;
+    background-attachment: fixed;
+}
+
+body {
+   background-color: rgb(255, 255, 255);
+   background-attachment: fixed;
+}
+
+img {
+    object-fit: cover;
+    position: fixed;
+}
+
+.container {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    padding: 45px;
+    margin-bottom: 25px;
+    gap: 45px;
+    font-size: 25pt;
+    align-items: center;
+    align-content: center;
+    animation: box 7s alternate 2s infinite;
+    color: white;
+}
+
+@keyframes box {
+    0% {
+        opacity: 100%;
+        background-image: linear-gradient(to top, rgb(255, 111, 0), rgb(255, 110, 161));    }
+
+    55% {
+        opacity: 50%;
+        background-image: linear-gradient(to top, rgb(255, 180, 122), rgb(255, 110, 161));    }    
+
+    100% {
+        opacity: 00%;
+        background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(236, 71, 129));
+    }
+}
+
+@media screen and (max-width:1500px) { 
+ body {
+    background-image: url(bgrose.png);
+    opacity:100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    }
+
+.bloom1 {
+    height:200px;
+    width:200px;
+    padding:20px;
+    font-size:10px;
+    background-repeat:no-repeat;
+    transition: all .5s;
+    position:relative;
+}
+
+.bloom1:hover {
+    background-color: rgb(163, 2, 2);
+    opacity: 70%;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+.bloom3{
+    opacity:0%;
+}
+
+.bloom4{
+    opacity:0%;
+}
+
+.bloom6{
+    opacity:0%;
+}
+
+.bloom8{
+    opacity:0%;
+}
+
+.bloom9{
+    opacity:0%;
+}
+
+.bloom13{
+    opacity:0%;}
+}
+
+
+@media screen and (max-width:1350px) { 
+        body {
+            background-image: url(bgrose.png);
+            opacity:100%;
+            object-fit: cover;
+            background-repeat: no-repeat;
+        }    
+    
+
+    .bloom3 {
+        height: 250px;
+        width: 250px;
+        padding:20px;
+        font-size:10px;
+        background-repeat:no-repeat;
+        transition: all .5s;
+        position:relative;
+        opacity:100%;
+    }
+
+    .bloom3:hover {
+        background-color: rgb(236, 31, 0);
+        opacity: 70%;
+        border: 5px solid rgb(255, 255, 255);
+    }
+
+.bloom4{
+    opacity:0%;
+}
+
+.bloom6{
+    opacity:0%;
+}
+
+.bloom8{
+    opacity:0%;
+}
+
+.bloom9{
+    opacity:0%;
+}
+
+.bloom13{
+    opacity:0%;}
+}
+
+@media screen and (max-width:1200px) { 
+    body {
+        background-image: url(bgrose.png);
+        opacity:100%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+    }    
+
+    .bloom4 {
+        height: 300px;
+        width: 300px;
+        padding:20px;
+        font-size:10px;
+        background-repeat:no-repeat;
+        transition: all .5s;
+        position:relative;
+        opacity:100%;
+    }
+
+    .bloom4:hover {
+        background-color: rgb(236, 79, 0);
+        opacity: 70%;
+        border: 5px solid rgb(255, 255, 255);
+    }
+
+.bloom6{
+    opacity:0%;
+}
+
+.bloom8{
+    opacity:0%;
+}
+
+.bloom9{
+    opacity:0%;
+}
+
+.bloom13{
+    opacity:0%;}
+}
+
+@media screen and (max-width:950px) { 
+    body {
+        background-image: url(bgrose.png);
+        opacity:100%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+    }    
+
+    .bloom6 {
+        height: 350px;
+        width: 350px;
+        padding:20px;
+        font-size:10px;
+        background-repeat:no-repeat;
+        transition: all .5s;
+        position:relative;
+        opacity:100%;
+    }
+
+    .bloom6:hover {
+        background-color: rgb(236, 126, 0);
+        opacity: 70%;
+        border: 5px solid rgb(255, 255, 255);
+    }
+    
+    .bloom8{
+        opacity:0%;
+    }
+    
+    .bloom9{
+        opacity:0%;
+    }
+    
+    .bloom13{
+        opacity:0%;}
+}
+
+@media screen and (max-width:800px) { 
+    body {
+        background-image: url(bgrose.png);
+        opacity:100%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+    }    
+
+    .bloom8 {
+        height: 400px;
+        width: 400px;
+        padding:20px;
+        font-size:10px;
+        background-repeat:no-repeat;
+        transition: all .5s;
+        position:relative;
+        opacity: 100%;
+    }
+
+    .bloom8:hover {
+        background-color: rgb(255, 149, 0);
+        opacity: 70%;
+        border: 5px solid rgb(255, 255, 255);
+    }
+     
+    .bloom9{
+        opacity:0%;
+    }
+    
+    .bloom13{
+        opacity:0%;}
+}
+
+@media screen and (max-width:750px) { 
+    body {
+        background-image: url(bgrose.png);
+        opacity:100%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+    }    
+
+    .bloom9 {
+        height: 450px;
+        width: 450px;
+        padding:20px;
+        font-size:10px;
+        background-repeat:no-repeat;
+        transition: all .5s;
+        position:relative;
+        opacity: 100%;
+    }
+
+    .bloom9:hover {
+        background-color: rgb(255, 196, 0);
+        opacity: 70%;
+        border: 5px solid rgb(255, 255, 255);
+        animation: bloom10 5s infinite linear;
+    }
+    .bloom13{
+        opacity:0%;}
+}
+
+@media screen and (max-width:600px) { 
+    body {
+        background-image: url(bgrose.png);
+        opacity:100%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+    }    
+
+    .bloom13 {
+        height: 500px;
+        width: 500px;
+        padding:20px;
+        font-size:10px;
+        background-repeat:no-repeat;
+        transition: all .5s;
+        position:relative;
+        opacity:100%;
+    }
+
+    .bloom13:hover {
+        background-color: rgb(255, 237, 39);
+        opacity: 70%;
+        border: 5px solid rgb(255, 255, 255);
+    }
+}
