@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+   background-color: rgb(255, 255, 255);
+}
+
+img {
+    max-width: 100%;
+}
+
+.dark {
+    background-color: rgb(48, 53, 40);
+}
+.sidebar {
+    padding: 20px;
+    background-color: slategray;
+    color: white;
+    font-size: 20px;
+    position:fixed;
+    top:0;
+    right:-300px;
+    width:300px;
+    height:100vh;
+    text-align:center;
+
+    transition: right .3s;
+}
+
+.active {
+    right:0;
+  }
+
+.box{
+    background-color: slategray;
+    width:100px;
+    height:100px;
+    position:fixed;
+    bottom:30px;
+    left:30px;
+    transition: transform .3s;
+  }
+
+.spin {
+    transform: rotate(180deg);
+  }
+
+.glow {
+    color:darkblue;
+    background-color: lemonchiffon;
+}
