@@ -4,6 +4,7 @@ $(".btn1").click(function(){
     $(".btn2").addClass("btn2after");
     $(".btn3").addClass("btn3after");
     $(".char").addClass("charafter");
+    $(".char1").addClass("charshow");
 });
 
 $(".btn2").click(function(){
@@ -12,6 +13,7 @@ $(".btn2").click(function(){
     $(".btn1").addClass("btn1after");
     $(".btn3").addClass("btn3after");
     $(".char").addClass("charafter");
+    $(".char2").addClass("charshow");
 });
 
 $(".btn3").click(function(){
@@ -20,6 +22,7 @@ $(".btn3").click(function(){
     $(".btn1").addClass("btn1after");
     $(".btn2").addClass("btn2after");
     $(".char").addClass("charafter");
+    $(".char3").addClass("charshow");
 });
 
 $(".popup button").click(function(){
