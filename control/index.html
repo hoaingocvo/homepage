@@ -10,10 +10,11 @@
     </head>
 
     <body>
-        <div class="hoaititle">
-           <img src="texttest.png">
-        </div>
 
+        <div class="hoaititle">
+            <img src="texttest.png">
+         </div>
+         
             <div class="container">
 
                 <div class="characters">
@@ -24,34 +25,51 @@
                     <div class="row">
                         <button type="submit" class="btn1" onclick="hideButton(this)">Pick Me</button>
                     
-                        <button type="submit" class="btn2" onclick="hideButton(this2)">Pick Me</button>
+                        <button type="submit" class="btn2" onclick="hideButton(this)">Pick Me</button>
                         
-                        <button type="submit" class="btn3" onclick="hideButton(this3)">Pick Me</button>
+                        <button type="submit" class="btn3" onclick="hideButton(this)">Pick Me</button>
                     
                         <div class="popup">
-                            <img src="berry.png">
+                            <img src="tick.png">
                             <h2>Are You Ready?</h2>
-                            <p>You have chosen the 'rabbit' character. Start the game now.</p>
+                            <p>You have chosen to feed this character. Start the game now.</p>
                             <button type="button">OK</button>
                         </div>
-                        </div>
-                        
-                        
+                    </div>
+                              
+                </div>
+  
+                <div class="farm">
+                    <img class="berry draggable" src="berry.png">
+                    <img class="berry1 draggable" src="berry.png">
+                    <img class="berry2 draggable" src="berry.png">
+                    <img class="berry3 draggable" src="berry.png">
+                    <img class="berry4 draggable" src="berry.png">
+                    <img class="berry5 draggable" src="berry.png">
+                    <img class="berry6 draggable" src="berry.png">
+                    <img class="berry7 draggable" src="berry.png">
+                    <img class="berry8 draggable" src="berry.png">
+                    <img class="berry9 draggable" src="berry.png">
                 </div>
 
-                <div class="basket">
-                    <img src="basket.png">
+                <div class="popup2">
+                    <h2>Great job!</h2>
                 </div>
+
+                <img class="basket" src="basket.png">
+
+
                 <div class="popup1">
                     <h2>How to play</h2>
-                    <p>There are stawberries and other vegetables rolling around the farm. Find and grab 10 strawberries and throw them to the basket to help these animals fasten their seasoning time. Good luck!</p>
-                    <button type="button">Close</button>
+                    <p>There are stawberries and other vegetables rolling around the farm. Find and grab 10 strawberries and throw them to the basket to help these animals fasten the harvest for this stawberry season. Good luck! </p>
+                    <p>Click here after you discovered all your stawberries.
+                    </p>
+                     <button type="button">Close </button>
                 </div>
+
+    
             </div>
         
-        
-            
-
         <script src="jquery-3.7.1.min.js"></script>
         <script src="jquery-ui.min.js"></script>
         <script src="script.js"></script>

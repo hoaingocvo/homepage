@@ -22,15 +22,15 @@ body {
 
 
 .hoaititle {
-    /* background-color: black; */
     display: block;
     width: 30%;
     padding-bottom:0px;
-    position: fixed;
     padding-top: 0px;
     object-fit: cover;
     align-content: center;
     transform: scale(0.7);
+    position: sticky;
+    top:20px;
 }
 
 .container {
@@ -86,6 +86,7 @@ body {
     color: #333;
     visibility: hidden;
     transition: transform 0.4s, top 0.4s;
+    position: fixed;
 }
 
 .open-popup {
@@ -109,7 +110,6 @@ body {
 
 .popup button {
     width: 100%;
-    margin-top: 50px;
     padding:10px 0;
     background:#6fd649;
     color: #fff;
@@ -121,17 +121,6 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.basket {
-    visibility: hidden;
-    transform: scale(0.3);
-    position: fixed;
-    right:40px;
-}
-
-.chosenbasket {
-    visibility: visible;
-}
-
 .popup1 {
     width: 250px;
     height: 500px;
@@ -139,29 +128,18 @@ body {
     color: white;
     border-radius: 0px;
     position:absolute;
-    top:0;
+    top:20%;
     left:80%;
-    transform: translate(-50%,-50%) scale(0.1);
     font-size: 15px;
     text-align:center;
     padding: 0 30px 30px;
     color: #333;
     align-content: center;
     visibility: hidden;
-    transition: transform 0.4s, top 0.4s;
 }
 
 .open-popup1 {
     visibility: visible;
-    top:50%;
-    transform: translate(-50%,-50%) scale(1);
-}
-
-.popup1 img {
-    width: 100px;
-    margin-top: -50px;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .popup1 h2 {
@@ -172,7 +150,6 @@ body {
 
 .popup1 button {
     width: 100%;
-    margin-top: 50px;
     padding:10px 0;
     background: rgb(157, 157, 157);
     transform: ;
@@ -184,6 +161,15 @@ body {
     cursor:pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+.popup1 h2 {
+    padding-bottom: 30px;
+}
+
+p {
+    padding-bottom: 50px;
+}
+
 .row {
     padding-left: 160px;
     gap: 310px;
@@ -252,6 +238,157 @@ body {
     transform: translateY(4px);
 }
 
+.charafter {
+    visibility: hidden;
+}
+
+.basket {
+    visibility: hidden;
+    position: fixed;
+    transform: scale(0.3);
+    margin: 0px;
+    padding: 0px;
+}
+
+.chosenbasket {
+    visibility: visible;
+}
+
+.farm {
+    /* background-color: #333; */
+    margin-top:0px;
+    padding-top:0px;
+    height: 100vh;
+    width: 60vw;
+    visibility: hidden;
+    position:absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: repeat:(1,100px);
+    grid-column-gap: 100px;
+    grid-row-gap:100px;
+}
+
+.farmafter {
+    visibility: visible;
+}
+
+.berry {
+    padding top:10px;
+    left:20px;
+    max-width: 100%;
+    height: 100%;
+    visibility: hidden;
+    object-fit:contain;
+}
+
+.berry1 {
+    top:0px;
+    left:0px;
+    max-width: 100%;
+    height: 100%;
+    visibility: hidden;
+    position: sticky;
+    object-fit:contain;
+}
+
+.berry2 {
+    top:0px;
+    left:0px;
+    max-width: 100%;
+    height: 100%;
+    visibility: hidden;
+    object-fit:contain;
+}
+
+.berry3 {
+    top:0px;
+    left:0px;
+    max-width: 100%;
+    height: 100%;
+    visibility: hidden;
+    object-fit:contain;
+}
+
+.berry4 {
+    top:0px;
+    left:0px;
+    max-width: 100%;
+    height: 100%;
+    visibility: hidden;
+    object-fit:contain;
+}
+
+.berry5 {
+    top:0px;
+    left:0px;
+    max-width: 100%;
+    height: 100%;
+    visibility: hidden;
+    object-fit:contain;
+}
+
+.berry6 {
+    top:0px;
+    left:0px;
+    max-width: 100%;
+    height: 100%;
+    visibility: hidden;
+    object-fit:contain;
+}
+
+.berry7 {
+    top:0px;
+    left:0px;
+    max-width: 100%;
+    height: 100%;
+    visibility: hidden;
+    object-fit:contain;
+}
+
+.berry8 {
+    top:0px;
+    left:0px;
+    max-width: 100%;
+    height: 100%;
+    visibility: hidden;
+    object-fit:contain;
+}
+
+.berry9 {
+    top:0px;
+    left:0px;
+    max-width: 100%;
+    height: 100%;
+    visibility: hidden;
+    object-fit:contain;
+}
+
+.berryafter {
+    visibility: visible;
+}
+
 .draggable {
     cursor:grab;
+}
+
+.popup2 {
+    width: 250px;
+    height: 500px;
+    background: #ff9bbb;
+    color: white;
+    border-radius: 0px;
+    position:absolute;
+    top:20%;
+    left:50%;
+    font-size: 15px;
+    text-align:center;
+    padding: 0 30px 30px;
+    color: #ffbcd3;
+    align-content: center;
+    visibility: hidden;
+}
+
+.open-popup2 {
+    visibility: visible;
 }
