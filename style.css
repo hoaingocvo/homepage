@@ -12,6 +12,9 @@ body {
     position:absolute;
     padding-bottom: 120px;
     }
+.hoaititle {
+    display: flex;
+}
 
 img {
     height: 100vh;
@@ -62,6 +65,7 @@ ul {
     height: auto;
     grid: 100px / auto auto;
     background-image: linear-gradient(to top, rgb(255, 111, 0), rgb(255, 110, 161));
+    margin-top: 100px;
     padding: 45px;
     gap: 45px;
     align-items: center;

@@ -18,5 +18,5 @@ $(".reveal-btn").click(function(){
 );
 
 $( function() {
-    $( ".draggable" ).draggable();
+    $( ".draggable" ).draggable({ grid: [ 20, 80 ] });
 } );
