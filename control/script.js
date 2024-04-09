@@ -51,6 +51,24 @@ $(".popup button").click(function(){
 }
 );
 
- $( function() {
-    $( ".draggable" ).draggable();
- } );
+
+$( function() {
+    $( ".draggable" ).draggable({
+        start: function( event, ui ) {
+            $(this).addClass('being-dragged'); 
+          },
+    });
+    $( ".droppable" ).droppable({
+      drop: function( event, ui ) {
+    //     $( this )
+    //       .addClass( "ui-state-highlight" )
+    //       .find( "p" )
+    //         .html( "Dropped!" );
+$(".being-dragged").hide();
+}
+    });
+} );
+
+ function hideButton() {
+$(this).hide();
+ };
