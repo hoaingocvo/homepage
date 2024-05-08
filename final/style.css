@@ -25,6 +25,15 @@ h2 {
     font-weight: bold;
 }
 
+h3 {
+    color: red;
+    margin: 0;
+}
+.item p {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 .logo-container {
     margin-top: 10px; /* Adjust the spacing between the store name and logo */
 }
