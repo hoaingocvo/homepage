@@ -130,6 +130,10 @@ h2 {
     margin-bottom: 10px;
 }
 
+.item button {
+    margin-top: 20px; /* Adjust the value as needed to add more space */
+}
+
 button {
     background-color: #333;
     color: #fff;
@@ -141,6 +145,12 @@ button {
 
 button:hover {
     background-color: #555;
+}
+
+.product-icon {
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    margin-right: 10px; /* Adjust spacing between icon and text */
 }
 
 #cart-list {
@@ -177,7 +187,16 @@ footer {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.4);
+}
+
+#cart-popup {
+    position: fixed;
+    top: 50%; /* Position the popup vertically centered */
+    left: 50%; /* Position the popup horizontally centered */
+    transform: translate(-50%, -50%); /* Center the popup exactly */
+    max-width: 80%; /* Set a maximum width for the popup */
+    overflow: auto; /* Enable scrolling if the content exceeds the popup's dimensions */
+    z-index: 1000; /* Ensure the popup is displayed above other elements */
 }
 
 .popup-content {

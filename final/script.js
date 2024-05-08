@@ -5,33 +5,68 @@ document.addEventListener('DOMContentLoaded', function() {
     var menuOverlay = document.querySelector('.menu-overlay');
     var aboutMePanel = document.getElementById('about-me-panel');
 
-    // Function to open the cart popup
-    function openCartPopup() {
-        var popup = document.getElementById('cart-popup');
-        var cartList = document.getElementById('cart-list');
-        var cartCount = document.getElementById('cart-count');
+   // Function to open the cart popup
+function openCartPopup() {
+    var popup = document.getElementById('cart-popup');
+    var cartList = document.getElementById('cart-list');
+    var cartCount = document.getElementById('cart-count');
 
-        cartList.innerHTML = ''; // Clear previous cart items
-        cart.forEach(function(item, index) {
-            var li = document.createElement('li');
-            li.textContent = item;
-            var removeButton = document.createElement('button');
-            removeButton.textContent = 'Remove';
-            removeButton.classList.add('remove');
-            removeButton.dataset.index = index;
-            li.appendChild(removeButton);
-            cartList.appendChild(li);
-        });
+    cartList.innerHTML = ''; // Clear previous cart items
+    cart.forEach(function(item, index) {
+        var li = document.createElement('li');
+        var productIcon = document.createElement('img'); // Create img element
+        productIcon.src = getProductIcon(item); // Get product icon URL
+        productIcon.classList.add('product-icon'); // Add class for styling
+        li.appendChild(productIcon); // Append product icon to list item
 
-        cartCount.textContent = cart.length;
-        popup.style.display = 'block';
-    }
+        // Append product name as text content
+        li.appendChild(document.createTextNode(item));
 
-    // Function to close the cart popup
-    function closeCartPopup() {
-        var popup = document.getElementById('cart-popup');
-        popup.style.display = 'none';
-    }
+        var removeButton = document.createElement('button');
+        removeButton.textContent = 'Remove';
+        removeButton.classList.add('remove');
+        removeButton.dataset.index = index;
+        li.appendChild(removeButton);
+        cartList.appendChild(li);
+    });
+
+    cartCount.textContent = cart.length;
+    popup.style.display = 'block';
+}
+
+function getProductIcon(productName) {
+    var productNameWithoutSpaces = productName.replace(/\s+/g, ''); // Remove spaces
+    var iconURL = productNameWithoutSpaces.toLowerCase() + '-image1.JPG'; // Assuming first image for each product
+    return iconURL;
+}
+
+// Example product names
+var productNames = [
+    "product1",
+    "product2",
+    "Product3",
+    "Product4",
+    "Product5",
+    "Product6",
+    "Product7",
+    "Product8",
+    "Product9",
+    "Product10",
+    "Product11",
+    "Product12"
+];
+
+// Gene rate icon paths for each product
+var productIcons = productNames.map(getProductIcon);
+
+console.log(productIcons);
+
+
+// Function to close the cart popup
+function closeCartPopup() {
+    var popup = document.getElementById('cart-popup');
+    popup.style.display = 'none';
+}
 
     // Add click event listener to each item's "Add to Cart" button
     items.forEach(function(item) {
