@@ -5,6 +5,7 @@
         <title>Hoai's Store - Final</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link href="lightbox.css" rel="stylesheet" />
         <script src="script.js"></script>
         <link rel="icon" type="image/png" href="favicon.png">
     </head>    
@@ -49,14 +50,28 @@
     <div class="container">
         <div class="store-items">
             <div class="item">
+
                 <div class="image-container">
-                    <!-- Add your product images here -->
+
+                    <a href="product1-image1.JPG" data-lightbox="roadtrip">
+                        <img src="product1-image1.JPG" alt="Product 1">
+                    </a>
+                    <a href="product1-image2.JPG" data-lightbox="roadtrip">
+                        <img src="product1-image2.JPG" alt="Product 1">
+                    </a>
+                    <a href="product1-image3.JPG" data-lightbox="roadtrip">
+                        <img src="product1-image3.JPG" alt="Product 1">
+                    </a>
+                    <a href="product1-image4.JPG" data-lightbox="roadtrip">
+                        <img src="product1-image4.JPG" alt="Product 1">
+                    </a>
+                    
                     <img src="product1-image1.JPG" alt="Product 1">
                     <img src="product1-image2.JPG" alt="Product 1">
                     <img src="product1-image3.JPG" alt="Product 1">
                     <img src="product1-image4.JPG" alt="Product 1">
-                    <!-- Add more images as needed -->
                 </div>
+
                 <div class="arrows">
                     <span class="arrow left-arrow">&lt;</span>
                     <span class="arrow right-arrow">&gt;</span>
@@ -277,6 +292,7 @@
             <form id="checkout-form">
                 <input type="text" id="name" name="name" placeholder="Name" required>
                 <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                <textarea id="email" name="email" placeholder="Email" required></textarea>
                 <textarea id="address" name="address" placeholder="Shipping Address" required></textarea>
                 <button type="submit">Submit</button>
             </form>
@@ -286,9 +302,11 @@
     <footer>
         <p>&copy; 2024 Hoai-vo Store</p>
     </footer>
-
+    
     <script src="jquery-3.7.1.min.js"></script>
     <script src="jquery-ui.min.js"></script>
     <script src="script.js"></script>
+    <script src="lightbox.js"></script>
+
  </body>
 </html>
